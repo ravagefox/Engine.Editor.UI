@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\02 - COMPILED\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WIN32</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>embedded</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+    <ProjectGuid>{7551F6B8-C979-40FF-9D8F-7DB8C9423F98}</ProjectGuid>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Engine.Editor.UI</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>Engine.Editor.UI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Engine.Assets">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Assets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Core">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Data">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Diagnostics">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Diagnostics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Graphics">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Graphics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Linq">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Math">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Math.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Engine.Net">
+      <HintPath>..\..\02 - COMPILED\x64\Debug\Engine.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BorderStyle.cs" />
+    <Compile Include="Controls\Direct2DButton.cs" />
+    <Compile Include="Controls\Direct2DCheckbox.cs" />
+    <Compile Include="Controls\Direct2DDragablePanel.cs" />
+    <Compile Include="Controls\Direct2DDropdownPanel.cs" />
+    <Compile Include="Controls\Direct2DGraph.cs" />
+    <Compile Include="Controls\Direct2DLabel.cs" />
+    <Compile Include="Controls\Direct2DProgressBar.cs" />
+    <Compile Include="Controls\Direct2DScrollBar.cs" />
+    <Compile Include="Controls\Direct2DTextbox.cs" />
+    <Compile Include="Events\SdlKeyEventArgs.cs" />
+    <Compile Include="Events\SdlMouseEventArgs.cs" />
+    <Compile Include="Managers\ContextHandler.cs" />
+    <Compile Include="Managers\DpiManager.cs" />
+    <Compile Include="Managers\WindowContext.cs" />
+    <Compile Include="__Internal\IMsgTranslator.cs" />
+    <Compile Include="Managers\BrushManager.cs" />
+    <Compile Include="Managers\FontManager.cs" />
+    <Compile Include="SDL2-CS\LPUtf8StrMarshaler.cs" />
+    <Compile Include="SDL2-CS\SDL2.cs" />
+    <Compile Include="SDL2-CS\SDL2_image.cs" />
+    <Compile Include="SDL2-CS\SDL2_mixer.cs" />
+    <Compile Include="SDL2-CS\SDL2_ttf.cs" />
+    <Compile Include="__Internal\Win32Helper.cs" />
+    <Compile Include="__Internal\WM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\Extensions.RawColor4.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C:\Program Files %28x86%29\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
+      <Link>SDL2.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files %28x86%29\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
+      <Link>soft_oal.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
